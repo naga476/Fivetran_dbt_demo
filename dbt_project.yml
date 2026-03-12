@@ -1,0 +1,9 @@
+name: 'fivetran_demo'
+version: '1.0'
+config-version: 2
+
+model-paths: ["models"]
+
+models:
+  fivetran_demo:
+    materialized: view
