@@ -1,6 +1,6 @@
 SELECT
-    "First Name" AS first_name,
-    "Last Name" AS last_name,
-    city,
-    TO_DATE("Birthday",'MM/DD/YYYY') AS birthday
+    FIRST_NAME_ AS first_name,
+    LAST_NAME AS last_name,
+    CITY_ AS city,
+    TO_DATE(BIRTHDAY,'MM/DD/YYYY') AS birthday
 FROM FIVETRAN_DATABASE01.GOOGLE_SHEETSDEMO.DEMO
