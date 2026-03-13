@@ -1,0 +1,7 @@
+SELECT
+first_name_,
+last_name,
+city_,
+birthday,
+DATEDIFF(year, birthday, CURRENT_DATE) AS age
+FROM FIVETRAN_DATABASE01.GOOGLE_SHEETSDEMO.DEMO
