@@ -1,7 +1,3 @@
-SELECT
-first_name_,
-last_name,
-city_,
-birthday,
+SELECT first_name, last_name, city, birthday,
 DATEDIFF(year, birthday, CURRENT_DATE) AS age
-FROM FIVETRAN_DATABASE01.GOOGLE_SHEETSDEMO.DEMO
+FROM {{ ref('people_clean') }}
