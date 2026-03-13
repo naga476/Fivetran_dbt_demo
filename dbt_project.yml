@@ -6,4 +6,4 @@ model-paths: ["models"]
 
 models:
   fivetran_demo:
-    materialized: view
+    +materialized: view
